@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+<link rel="icon" href="images/icon1.png">
+<meta name="theme-color" content="#2196f3">
+
+</head>
+<body>
+  <div class="weather-app">
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="input-container">
+        <input type="text" id="locationInput" placeholder="Enter city name" />
+        <button id="voiceSearch">🎙️</button>
+<p id="status"></p>
+<br>
+        <button id="getWeather">Get Weather</button>
+      </div>
+      <div id="weather" class="weather-info"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('✅ Service Worker Registered'))
+      .catch(err => console.error('❌ SW Registration Failed:', err));
+  }
+</script>
+
+</body>
+</html>

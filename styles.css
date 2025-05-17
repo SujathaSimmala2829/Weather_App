@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('images/background.jpg'); /* or use an external image link */
+  background-size: cover;                 /* scales to full screen */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;           /* optional: keeps background fixed on scroll */
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-app {
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+#locationInput {
+  padding: 10px;
+  font-size: 1rem;
+  width: 70%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#locationInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+#locationInput::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.weather-info h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.weather-info p {
+  margin: 10px 0;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #locationInput {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 80%;
+  }
+}
+
