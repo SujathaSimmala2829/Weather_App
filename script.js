@@ -5,7 +5,7 @@ const locationInput = document.getElementById("locationInput");
 
 // Function to fetch weather data by city name
 async function fetchWeatherDataByCity(city) {
-  const apiKey = "d473d3173f1fdc223507f8337fe1da65"; // Replace with your OpenWeatherMap API key
+  const apiKey = ""; // Replace with your OpenWeatherMap API key
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
   try {
